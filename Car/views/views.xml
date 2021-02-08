@@ -11,6 +11,7 @@
                         <group>
                             <field name="name" string="Marque"/>
                             <field name="driver_id"/>
+                            <field name="parking_id"/>
                         </group>
                         <group>
                             <field name="horse_power" string="Puissance"/>
@@ -29,6 +30,7 @@
                 <tree>
                     <field name="name"/>
                     <field name="driver_id"/>
+                    <field name="parking_id"/>
                     <field name="horse_power"/>
                     <field name="door_number"/>
                 </tree>
