@@ -7,4 +7,4 @@ class Car(models.Model):
 
     name = fields.Char(string='Name')
     horse_power = fields.Integer(string='Horse Power')
-    door_Number = fields.Integer(string='Door Number')
+    door_number = fields.Integer(string='Door Number')
