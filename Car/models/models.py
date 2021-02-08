@@ -8,3 +8,5 @@ class Car(models.Model):
     name = fields.Char(string='Name')
     horse_power = fields.Integer(string='Horse Power')
     door_number = fields.Integer(string='Door Number')
+
+    driver_id = fields.Many2one('res.partner', string='Driver')
