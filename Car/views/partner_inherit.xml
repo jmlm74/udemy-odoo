@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- form view parking -->
+        <record id="partner_inherit" model="ir.ui.view">
+            <field name="name">partner_inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='vat']" position="after">
+                    <field name="message_car" string="Message for Car" />
+
+                </xpath>
+            </field>
+        </record>
+</odoo>
