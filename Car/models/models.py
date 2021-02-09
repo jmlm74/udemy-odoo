@@ -9,10 +9,19 @@ class Car(models.Model):
     horse_power = fields.Integer(string='Horse Power')
     door_number = fields.Integer(string='Door Number')
 
+    total_speed=fields.Integer(string='Total speed (computed)', compute='get_total_speed' )
+
     driver_id = fields.Many2one('res.partner', string='Driver')
     parking_id = fields.Many2one('parking.parking', string='Parking')
     feature_ids = fields.Many2many('car.feature', string='Feature')
 
+    """
+    Functions
+    """
+    # computed speed
+    def get_total_speed(self):
+        for rec in self:
+            rec.total_speed = rec.horse_power + 100
 
 # One2Many relation
 class Parking(models.Model):

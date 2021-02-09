@@ -12,6 +12,7 @@
                             <field name="name" string="Type"/>
                             <field name="driver_id"/>
                             <field name="parking_id"/>
+                            <field name="total_speed"/>
                         </group>
                         <group>
                             <field name="feature_ids" string="Feature" widget="many2many_tags"/>
@@ -33,6 +34,7 @@
                     <field name="driver_id"/>
                     <field name="feature_ids"/>
                     <field name="parking_id"/>
+                    <field name="total_speed" string="speed" />
                     <field name="horse_power"/>
                     <field name="door_number"/>
                 </tree>
