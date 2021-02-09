@@ -20,7 +20,7 @@
     'category': 'Extra Tools',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'contacts', ],
 
     # always loaded
     'data': [
@@ -34,6 +34,7 @@
     'demo': [
         'demo/demo.xml',
     ],
+    'images': ['static/description/icon.png'],
     'installable': True,
     'application': True,
     'auto_install': False,

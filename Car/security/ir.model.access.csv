@@ -4,3 +4,4 @@ access_car_id,access_car,model_car_car,base.group_user,1,1,1,1
 access_parking_id,access_parking,model_parking_parking,base.group_user,1,1,1,1
 
 access_feature_id,access_feature,model_car_feature,base.group_user,1,1,1,1
+
