@@ -18,15 +18,17 @@
                     </header>
                     <group>
                         <group>
-                            <field name="name" string="Type"/>
-                            <field name="driver_id"/>
+                            <field name="name" string="Type" required="1" />
+                            <field name="driver_id" />
                             <field name="parking_id"/>
                         </group>
                         <group>
-                            <field name="total_speed"/>
+                            <field name="total_speed"
+                                   attrs="{'invisible': [('horse_power','=',150)],
+                                           'required': [('name','=','abcd')]}"/>
                             <field name="feature_ids" string="Feature" widget="many2many_tags"/>
-                            <field name="horse_power" string="Power"/>
-                            <field name="door_number" string="Doors"/>
+                            <field name="horse_power" string="Power" readonly="1"/>
+                            <field name="door_number" string="Doors" invisible="1"/>
                         </group>
                     </group>
                 </sheet>
