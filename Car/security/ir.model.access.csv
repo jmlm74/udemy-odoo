@@ -1,3 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_car_id,access_car,model_car_car,base.group_user,1,1,1,1
+
 access_parking_id,access_parking,model_parking_parking,base.group_user,1,1,1,1
+
+access_feature_id,access_feature,model_car_feature,base.group_user,1,1,1,1

@@ -9,13 +9,14 @@
                 <form>
                     <group>
                         <group>
-                            <field name="name" string="Marque"/>
+                            <field name="name" string="Type"/>
                             <field name="driver_id"/>
                             <field name="parking_id"/>
                         </group>
                         <group>
-                            <field name="horse_power" string="Puissance"/>
-                            <field name="door_number" string="Nbre portes"/>
+                            <field name="feature_ids" string="Feature" widget="many2many_tags"/>
+                            <field name="horse_power" string="Power"/>
+                            <field name="door_number" string="Doors"/>
                         </group>
                     </group>
                 </form>
@@ -30,6 +31,7 @@
                 <tree>
                     <field name="name"/>
                     <field name="driver_id"/>
+                    <field name="feature_ids"/>
                     <field name="parking_id"/>
                     <field name="horse_power"/>
                     <field name="door_number"/>
