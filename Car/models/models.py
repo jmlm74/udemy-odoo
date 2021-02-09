@@ -54,6 +54,16 @@ class Car(models.Model):
         result = super(Car, self).write(vals)
         return result
 
+    def unlink(self):
+        """
+        The loop is for the list delete (select more than one item and delete them
+         singleton error
+        """
+        for rec in self:
+            if rec.name.upper() == 'TOYOTA':
+                raise ValidationError(_("Don't remove Japanese cars !"))
+        result = super(Car, self).unlink()
+        return result
 
 # One2Many relation
 class Parking(models.Model):
