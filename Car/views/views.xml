@@ -1,61 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-        <!-- form view car -->
-        <record id="car_form" model="ir.ui.view">
-            <field name="name">Cars</field>
-            <field name="model">car.car</field>
-            <field name="arch" type="xml">
-                <form>
+    <!-- form view car -->
+    <record id="car_form" model="ir.ui.view">
+        <field name="name">Cars</field>
+        <field name="model">car.car</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <header>
+                        <button name="set_car_to_used" string="Set used" type="object" class="oe_highlight"
+                                attrs="{'invisible': [('state','!=', 'new')]}"/>
+                        <button name="set_car_to_sold" string="Set sold" type="object" class="oe_highlight"
+                                attrs="{'invisible': [('state','==', 'sold')]}"/>
+                        <field name="state" widget="statusbar" />
+
+                    </header>
                     <group>
                         <group>
                             <field name="name" string="Type"/>
                             <field name="driver_id"/>
                             <field name="parking_id"/>
-                            <field name="total_speed"/>
                         </group>
                         <group>
+                            <field name="total_speed"/>
                             <field name="feature_ids" string="Feature" widget="many2many_tags"/>
                             <field name="horse_power" string="Power"/>
                             <field name="door_number" string="Doors"/>
                         </group>
                     </group>
-                </form>
-            </field>
-        </record>
+                </sheet>
+            </form>
+        </field>
+    </record>
 
-        <!-- tree view car -->
-        <record id="car_tree" model="ir.ui.view">
-            <field name="name">Cars.tree</field>
-            <field name="model">car.car</field>
-            <field name="arch" type="xml">
-                <tree>
-                    <field name="name"/>
-                    <field name="driver_id"/>
-                    <field name="feature_ids"/>
-                    <field name="parking_id"/>
-                    <field name="total_speed" string="speed" />
-                    <field name="horse_power"/>
-                    <field name="door_number"/>
-                </tree>
-            </field>
-        </record>
+    <!-- tree view car -->
+    <record id="car_tree" model="ir.ui.view">
+        <field name="name">Cars.tree</field>
+        <field name="model">car.car</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="driver_id"/>
+                <field name="feature_ids"/>
+                <field name="parking_id"/>
+                <field name="total_speed" string="speed"/>
+                <field name="state"/>
+                <field name="horse_power"/>
+                <field name="door_number"/>
+            </tree>
+        </field>
+    </record>
 
-        <!-- Action for car -->
-        <record id="car_action" model="ir.actions.act_window">
-            <field name="name">Cars</field>
-            <field name="type">ir.actions.act_window</field>
-            <field name="res_model">car.car</field>
-            <field name="view_mode">tree,kanban,form</field>
-            <field name="context">{}</field>
-            <field name="help" type="html">
-                <p class="o_view_nocontent_smiling_face">
-                    Enter your 1st car here !
-                </p>
-            </field>
-        </record>
+    <!-- Action for car -->
+    <record id="car_action" model="ir.actions.act_window">
+        <field name="name">Cars</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">car.car</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Enter your 1st car here !
+            </p>
+        </field>
+    </record>
 
-        <!-- menu for Car -->
-        <menuitem id="car_menu" name="car_menu" sequence="2" action="car_action"/>
+    <!-- menu for Car -->
+    <menuitem id="car_menu" name="car_menu" sequence="2" action="car_action"/>
 
 </odoo>
