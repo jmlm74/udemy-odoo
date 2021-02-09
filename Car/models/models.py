@@ -39,9 +39,14 @@ class Car(models.Model):
     # sequence override create
     @api.model
     def create(self, vals):
+        print(vals)
+        if vals['name'] == 'bmw':
+            vals['name'] = 'BMWAI'
+        # for the sequence
         vals['car_sequence']=self.env['ir.sequence'].next_by_code('car.sequence')
         result = super(Car, self).create(vals)
         return result
+
 
 # One2Many relation
 class Parking(models.Model):
