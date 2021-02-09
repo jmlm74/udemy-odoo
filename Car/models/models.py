@@ -1,4 +1,5 @@
-from odoo import models, fields, api
+from odoo import models, fields, api, _
+from odoo.exceptions import ValidationError
 
 
 class Car(models.Model):
@@ -45,6 +46,12 @@ class Car(models.Model):
         # for the sequence
         vals['car_sequence']=self.env['ir.sequence'].next_by_code('car.sequence')
         result = super(Car, self).create(vals)
+        return result
+
+    def write(self, vals):
+        if vals['horse_power'] <= 4:
+            raise ValidationError(_("Horse_Power should be greater than 4"))
+        result = super(Car, self).write(vals)
         return result
 
 
