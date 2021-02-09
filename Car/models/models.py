@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import models, fields, api
 
 
 class Car(models.Model):
@@ -18,6 +18,7 @@ class Car(models.Model):
     state = fields.Selection([('new', 'New'),
                               ('used', 'Used'),
                               ('sold', 'Sold')], string='Status', default='new')
+    car_sequence = fields.Char(string="sequence")
 
     """
     Methods
@@ -28,11 +29,19 @@ class Car(models.Model):
         for rec in self:
             rec.total_speed = rec.horse_power + 100
 
+    # buttons
     def set_car_to_used(self):
         self.state = 'used'
 
     def set_car_to_sold(self):
         self.state = 'sold'
+
+    # sequence override create
+    @api.model
+    def create(self, vals):
+        vals['car_sequence']=self.env['ir.sequence'].next_by_code('car.sequence')
+        result = super(Car, self).create(vals)
+        return result
 
 # One2Many relation
 class Parking(models.Model):

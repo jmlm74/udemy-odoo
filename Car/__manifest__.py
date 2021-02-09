@@ -28,6 +28,7 @@
         'views/views.xml',
         'views/templates.xml',
         'views/parking.xml',
+        'views/sequence.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
