@@ -36,6 +36,8 @@
                                 attrs="{'invisible': [('state','==', 'sold')]}"/>
                         <field name="state" widget="statusbar" />
                     </header>
+                    <widget name="web_ribbon" text="NEW" bg_color="bg-success" attrs="{'invisible': [('state','!=', 'new')]}" />
+                    <widget name="web_ribbon" text="SOLD" bg_color="bg-danger" attrs="{'invisible': [('state','!=', 'sold')]}" />
                     <group>
                         <group>
 
