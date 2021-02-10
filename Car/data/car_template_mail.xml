@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="car_mail_template" model="mail.template">
+        <field name="name">Car_email_template</field>
+        <field name="email_from">${user.email}</field>
+        <field name="subject">car solded ${object.name}</field>
+        <field name="lang">${object.lang}</field>
+        <field name="model_id" ref="model_car_car" />
+        <field name="auto_delete" eval="True" />
+        <field name="body_html">
+            <![CDATA[
+            Hello sir, ${object.driver_id.name} <br />
+            bla bla bla <br />
+            Horse power : ${object.horse_power} <br />
+            best regards
+            ]]>
+        </field>
+    </record>
+</odoo>

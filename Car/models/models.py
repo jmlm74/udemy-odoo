@@ -36,6 +36,15 @@ class Car(models.Model):
 
     def set_car_to_sold(self):
         self.state = 'sold'
+        # get the id of the mail template --> cf car_template_mail.xml
+        template_id = self.env.ref('Car.car_mail_template')
+        if (template_id):
+            print("Send Mail")
+            template_id.send_mail(self.id,
+                                  force_send=True,
+                                  raise_exception=True,
+                                  email_values={'email_to': self.driver_id.email})
+
 
     # sequence override create
     @api.model
@@ -49,8 +58,12 @@ class Car(models.Model):
         return result
 
     def write(self, vals):
-        if vals['horse_power'] <= 4:
-            raise ValidationError(_("Horse_Power should be greater than 4"))
+        try:
+            if vals['horse_power'] <= 4:
+                raise ValidationError(_("Horse_Power should be greater than 4"))
+        except KeyError:
+            # not found --> change state only
+            pass
         result = super(Car, self).write(vals)
         return result
 

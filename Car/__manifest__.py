@@ -31,7 +31,7 @@
         'views/parking.xml',
         'views/sequence.xml',
         'views/partner_inherit.xml',
-
+        'data/car_template_mail.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
