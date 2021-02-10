@@ -1,0 +1,339 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* Car
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-10 14:46+0000\n"
+"PO-Revision-Date: 2021-02-10 14:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: Car
+#: model:mail.template,body_html:Car.car_mail_template
+msgid ""
+"\n"
+"            \n"
+"            Hello sir, ${object.driver_id.name} <br />\n"
+"            bla bla bla <br />\n"
+"            Horse power : ${object.horse_power} <br />\n"
+"            best regards\n"
+"            \n"
+"        "
+msgstr ""
+
+#. module: Car
+#: model:ir.actions.act_window,name:Car.car_wizard_action
+msgid "Add Horse Power"
+msgstr "Ajouter des chevaux"
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_wizard_form
+msgid "Add Horse power"
+msgstr "Ajouter des chevaux"
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_form
+msgid "Add Horse_Power"
+msgstr "Ajouter des chevaux"
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_wizard_form
+msgid "Apply"
+msgstr "Appliquer"
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_search_view
+msgid "By driver"
+msgstr "Par chauffeur"
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_wizard_form
+msgid "Cancel"
+msgstr "Abandon"
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_search_view
+msgid "Car Search"
+msgstr ""
+
+#. module: Car
+#: model:ir.actions.act_window,name:Car.car_action
+#: model:ir.model.fields,field_description:Car.field_parking_parking__car_ids
+msgid "Cars"
+msgstr ""
+
+#. module: Car
+#: model:ir.model,name:Car.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__create_uid
+#: model:ir.model.fields,field_description:Car.field_car_feature__create_uid
+#: model:ir.model.fields,field_description:Car.field_car_wizard__create_uid
+#: model:ir.model.fields,field_description:Car.field_parking_parking__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__create_date
+#: model:ir.model.fields,field_description:Car.field_car_feature__create_date
+#: model:ir.model.fields,field_description:Car.field_car_wizard__create_date
+#: model:ir.model.fields,field_description:Car.field_parking_parking__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__display_name
+#: model:ir.model.fields,field_description:Car.field_car_feature__display_name
+#: model:ir.model.fields,field_description:Car.field_car_wizard__display_name
+#: model:ir.model.fields,field_description:Car.field_parking_parking__display_name
+#: model:ir.model.fields,field_description:Car.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: Car
+#: code:addons/Car/models/models.py:0
+#, python-format
+msgid "Don't remove Japanese cars !"
+msgstr "On ne supprime pas les japonaises !!!"
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__door_number
+msgid "Door Number"
+msgstr ""
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_form
+msgid "Doors"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__driver_id
+msgid "Driver"
+msgstr ""
+
+#. module: Car
+#: model_terms:ir.actions.act_window,help:Car.car_action
+msgid "Enter your 1st car here !"
+msgstr ""
+
+#. module: Car
+#: model_terms:ir.actions.act_window,help:Car.parking_action
+msgid "Enter your 1st parking here !"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__feature_ids
+#: model_terms:ir.ui.view,arch_db:Car.car_form
+msgid "Feature"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_feature__name
+msgid "Feature name"
+msgstr ""
+
+#. module: Car
+#: model:ir.model,name:Car.model_car_feature
+msgid "Features for cars "
+msgstr ""
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_search_view
+msgid "Group by ..."
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__horse_power
+msgid "Horse Power"
+msgstr ""
+
+#. module: Car
+#: code:addons/Car/models/models.py:0
+#, python-format
+msgid "Horse_Power should be greater than 4"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_wizard__horse_power_plus
+msgid "Horse_power_plus"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__id
+#: model:ir.model.fields,field_description:Car.field_car_feature__id
+#: model:ir.model.fields,field_description:Car.field_car_wizard__id
+#: model:ir.model.fields,field_description:Car.field_parking_parking__id
+#: model:ir.model.fields,field_description:Car.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car____last_update
+#: model:ir.model.fields,field_description:Car.field_car_feature____last_update
+#: model:ir.model.fields,field_description:Car.field_car_wizard____last_update
+#: model:ir.model.fields,field_description:Car.field_parking_parking____last_update
+#: model:ir.model.fields,field_description:Car.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__write_uid
+#: model:ir.model.fields,field_description:Car.field_car_feature__write_uid
+#: model:ir.model.fields,field_description:Car.field_car_wizard__write_uid
+#: model:ir.model.fields,field_description:Car.field_parking_parking__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__write_date
+#: model:ir.model.fields,field_description:Car.field_car_feature__write_date
+#: model:ir.model.fields,field_description:Car.field_car_wizard__write_date
+#: model:ir.model.fields,field_description:Car.field_parking_parking__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.partner_form_inherit
+#: model_terms:ir.ui.view,arch_db:Car.partner_tree_inherit
+msgid "Message for Car"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__name
+msgid "Name"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields.selection,name:Car.selection__car_car__state__new
+msgid "New"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__parking_id
+msgid "Parking"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_parking_parking__name
+msgid "Parking name"
+msgstr ""
+
+#. module: Car
+#: model:ir.actions.act_window,name:Car.parking_action
+msgid "Parkings"
+msgstr ""
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_form
+msgid "Power"
+msgstr ""
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_form
+msgid "Set sold"
+msgstr ""
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_form
+msgid "Set used"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields.selection,name:Car.selection__car_car__state__sold
+msgid "Sold"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__state
+msgid "Status"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__total_speed
+msgid "Total speed (computed)"
+msgstr ""
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_form
+msgid "Type"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields.selection,name:Car.selection__car_car__state__used
+msgid "Used"
+msgstr ""
+
+#. module: Car
+#: model:ir.model,name:Car.model_car_car
+msgid "car model"
+msgstr ""
+
+#. module: Car
+#: model:mail.template,subject:Car.car_mail_template
+msgid "car solded ${object.name}"
+msgstr ""
+
+#. module: Car
+#: model:ir.model,name:Car.model_car_wizard
+msgid "car wizard"
+msgstr ""
+
+#. module: Car
+#: model:ir.ui.menu,name:Car.car_menu
+msgid "car_menu"
+msgstr ""
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_search_view
+msgid "door = 2"
+msgstr ""
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_search_view
+msgid "door > 2"
+msgstr ""
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_search_view
+msgid "door >= 2"
+msgstr ""
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_search_view
+msgid "door inf 2"
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_res_partner__message_car
+#: model:ir.model.fields,field_description:Car.field_res_users__message_car
+msgid "message_car"
+msgstr ""
+
+#. module: Car
+#: model:ir.ui.menu,name:Car.parking_menu
+msgid "parking"
+msgstr ""
+
+#. module: Car
+#: model:ir.model,name:Car.model_parking_parking
+msgid "parking for cars "
+msgstr ""
+
+#. module: Car
+#: model:ir.model.fields,field_description:Car.field_car_car__car_sequence
+msgid "sequence"
+msgstr ""
+
+#. module: Car
+#: model_terms:ir.ui.view,arch_db:Car.car_tree
+msgid "speed"
+msgstr ""
