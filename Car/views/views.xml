@@ -9,6 +9,9 @@
             <form>
                 <sheet>
                     <header>
+                        <!-- for wizard button >> action name with prfix as modulename (cf wizard.xml) -->
+                        <button name="%(car_wizard_action)d" string="Add Horse_Power"
+                                type="action" class="oe_highlight" />
                         <button name="set_car_to_used" string="Set used" type="object" class="oe_highlight"
                                 attrs="{'invisible': [('state','!=', 'new')]}"/>
                         <button name="set_car_to_sold" string="Set sold" type="object" class="oe_highlight"

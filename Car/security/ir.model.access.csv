@@ -5,3 +5,4 @@ access_parking_id,access_parking,model_parking_parking,base.group_user,1,1,1,1
 
 access_feature_id,access_feature,model_car_feature,base.group_user,1,1,1,1
 
+access_wizard_id,access_wizard,model_car_wizard,base.group_user,1,1,1,1

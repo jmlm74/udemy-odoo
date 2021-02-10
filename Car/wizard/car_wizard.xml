@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- wizard Action -->
+    <record id="car_wizard_action" model="ir.actions.act_window">
+        <field name="name">Add Horse Power</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">car.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="views">[(False, 'form')]</field>
+        <field name="target">new</field>
+    </record>
+
+
+    <!-- form for car wizard -->
+    <record id="car_wizard_form" model="ir.ui.view">
+        <field name="name">Add horse power form</field>
+        <field name="model">car.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="horse_power_plus" string="Add Horse power"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button string="Apply" name="Apply_car_wizard" type="object" class="'btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

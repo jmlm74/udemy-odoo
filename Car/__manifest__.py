@@ -25,11 +25,13 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
+        'wizard/car_wizard.xml',
         'views/views.xml',
         'views/templates.xml',
         'views/parking.xml',
         'views/sequence.xml',
         'views/partner_inherit.xml',
+
     ],
     # only loaded in demonstration mode
     'demo': [
